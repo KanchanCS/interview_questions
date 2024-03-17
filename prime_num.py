@@ -5,7 +5,6 @@
 # 2
 # 3
 # 5
-
 def is_prime(num):
     """Return True if the input number is prim , otherwise return False."""
     # Numbers less than 2
@@ -22,3 +21,5 @@ def is_prime(num):
 # Test the function
 number = int(input("Enter a number: "))
 print(is_prime(number))
+
+
