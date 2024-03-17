@@ -7,22 +7,18 @@
 # 5
 
 def is_prime(num):
-    if num <= 1:
-        return False
-    elif num <= 3:
-        return True
-    elif num % 2 == 0 or num % 3 == 0:
-        return False
-    i = 5
-    while i * i <= num:
-        if num % i == 0 or num % (i + 2) == 0:
-            return False
-        i += 6
-    return True
+    """Return True if the input number is prim , otherwise return False."""
+    # Numbers less than 2
+    count = 0
+    if num >= 1:
+        for i in range(1, num+1):
+            if num % i == 0:
+
+                count += 1
+    if count == 2:
+        return f"{num} is a prime number."
+    return f"{num} is not a prime number."        
 
 # Test the function
 number = int(input("Enter a number: "))
-if is_prime(number):
-    print(number, "is a prime number.")
-else:
-    print(number, "is not a prime number.")
+print(is_prime(number))
