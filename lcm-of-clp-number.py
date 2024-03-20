@@ -11,3 +11,5 @@ num1 = 12
 num2 = 15
 result = lcm(num1, num2)
 print(f"LCM of {num1} and {num2} is {result}")
+
+
